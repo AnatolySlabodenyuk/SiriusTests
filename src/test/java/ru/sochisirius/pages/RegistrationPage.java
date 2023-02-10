@@ -1,7 +1,8 @@
-package guru.qa.pages;
+package ru.sochisirius.pages;
 
 import com.codeborne.selenide.SelenideElement;
 
+import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
@@ -20,7 +21,8 @@ public class RegistrationPage {
             passwordInput = $("#f_pwd"),
             passwordRepeatInput = $("#f_pwd_r"),
             checkBox = $(byText("Нажимая на кнопку")),
-            submitButton = $("#submit");
+            submitButton = $("#submit"),
+            registrationResultsModal = $(".modal-inline");
 
     public RegistrationPage openPage() {
         open("/auth");
@@ -73,6 +75,12 @@ public class RegistrationPage {
         submitButton.click();
         return this;
     }
+
+    public RegistrationPage resultsModalAppear() {
+        registrationResultsModal.should(appear);
+        return this;
+    }
+
 }
 
 

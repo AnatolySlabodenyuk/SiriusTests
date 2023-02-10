@@ -1,9 +1,9 @@
-package guru.qa.tests;
+package ru.sochisirius.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import guru.qa.helpers.Attach;
-import guru.qa.pages.RegistrationPage;
+import ru.sochisirius.helpers.Attach;
+import ru.sochisirius.pages.RegistrationPage;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;

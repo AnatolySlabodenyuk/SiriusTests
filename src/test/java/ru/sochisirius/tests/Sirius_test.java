@@ -1,4 +1,4 @@
-package guru.qa.tests;
+package ru.sochisirius.tests;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
