@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 
@@ -16,7 +17,7 @@ public class RegistrationPageTests extends TestBase {
     @DisplayName("Форма регистрации имеет название \"Зарегистрируйтесь, чтобы продолжить\"")
     void positiveTest1() {
         step("Открыть форму регистрации и проверить, что форма имеет правильное название", () -> {
-            registrationPage.openPage();
+            registrationPage.openRegistrationPage();
         });
     }
 
@@ -32,7 +33,7 @@ public class RegistrationPageTests extends TestBase {
         String repeatPassword = password;
 
         step("Открыть форму регистрации", () -> {
-            registrationPage.openPage();
+            registrationPage.openRegistrationPage();
         });
 
         step("Заполнить поля формы и нажать кнопку", () -> {
@@ -64,7 +65,7 @@ public class RegistrationPageTests extends TestBase {
         String repeatPassword = password;
 
         step("Открыть форму регистрации", () -> {
-            registrationPage.openPage();
+            registrationPage.openRegistrationPage();
         });
 
         step("Заполнить поля формы и нажать кнопку", () -> {
@@ -81,6 +82,24 @@ public class RegistrationPageTests extends TestBase {
 
         step("Проверить, что Email совпадает", () -> {
             $(".modal-inline__body").shouldHave(text(eMail));
+        });
+    }
+
+    @Test
+    @Tag("Sirius_tests")
+    @DisplayName("Открывается страница с восстановлением пароля при нажатии на ссылку")
+    void positiveTest4() {
+
+        step("Открыть форму регистрации", () -> {
+            registrationPage.openRegistrationPage();
+        });
+
+        step("Нажать на ссылку \"получить пароль\"", () -> {
+            $(byText("получить пароль")).click();
+        });
+
+        step("Проверить, что открывшаяся страница имеет заголовок \"Сброс пароля\"", () -> {
+            $(".modal-inline__title").shouldHave(text("Сброс пароля"));
         });
     }
 }

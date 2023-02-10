@@ -24,7 +24,7 @@ public class RegistrationPage {
             submitButton = $("#submit"),
             registrationResultsModal = $(".modal-inline");
 
-    public RegistrationPage openPage() {
+    public RegistrationPage openRegistrationPage() {
         open("/auth");
         $(byText("Зарегистрируйтесь")).click();
         $(".modal-inline__title").shouldHave(text(TITLE_TEXT));
