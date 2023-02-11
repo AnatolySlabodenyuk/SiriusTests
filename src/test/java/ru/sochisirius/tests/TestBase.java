@@ -12,6 +12,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.Map;
 
+import static com.codeborne.selenide.Selenide.closeWebDriver;
+
 public class TestBase {
 
     RegistrationPage registrationPage = new RegistrationPage();
@@ -43,5 +45,10 @@ public class TestBase {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
+    }
+
+    @AfterEach
+    void close(){
+        closeWebDriver();
     }
 }
