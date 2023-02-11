@@ -45,7 +45,7 @@ tasks.withType(Test) {
 
 }
 
-task Sirius(type: Test) {
+task ui_test(type: Test) {
     useJUnitPlatform {
         includeTags("Sirius_tests")
     }
