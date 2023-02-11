@@ -15,7 +15,7 @@ public class RegistrationPageTests extends TestBase {
     @Test
     @Tag("Sirius_tests")
     @DisplayName("Форма регистрации имеет название \"Зарегистрируйтесь, чтобы продолжить\"")
-    void positiveTest1() {
+    void nameRegistrationFormTest() {
         step("Открыть форму регистрации и проверить, что форма имеет правильное название", () -> {
             registrationPage.openRegistrationPage();
         });
@@ -24,7 +24,7 @@ public class RegistrationPageTests extends TestBase {
     @Test
     @Tag("Sirius_tests")
     @DisplayName("Появляется окно запроса на регистрацию после заполнения всех полей формы и подтверждения")
-    void positiveTest2() {
+    void resultsModalAppearsTest() {
         String eMail = faker.internet().emailAddress();
         String lastName = faker.name().lastName();
         String userName = faker.name().firstName();
@@ -56,7 +56,7 @@ public class RegistrationPageTests extends TestBase {
     @Test
     @Tag("Sirius_tests")
     @DisplayName("Указанный на странице регистрации Email совпадает с Email в появившемся окне о запросе на регистрацию")
-    void positiveTest3() {
+    void eMailTest() {
         String eMail = faker.internet().emailAddress();
         String lastName = faker.name().lastName();
         String userName = faker.name().firstName();
@@ -88,7 +88,7 @@ public class RegistrationPageTests extends TestBase {
     @Test
     @Tag("Sirius_tests")
     @DisplayName("Открывается страница с восстановлением пароля при нажатии на ссылку")
-    void positiveTest4() {
+    void passwordPageTest() {
 
         step("Открыть форму регистрации", () -> {
             registrationPage.openRegistrationPage();
