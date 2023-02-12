@@ -10,10 +10,10 @@
 - [Технологии и инструменты](#wrench-технологии-и-инструменты)
 - [Список проверок](#white_check_mark-список-проверок)
 - [Запуск тестов (сборка в Jenkins)](#electric_plug-запуск-тестов)
-- [Allure-отчет](#img-srcimageslogoalluresvg-width25-height25--altallure-a-отчет-в-a-targetblank-hrefhttpsjenkinsautotestscloudjobc17-slabodenyuk-siriustests7allure-allure-report-a)
-- [Интеграция с Allure TestOps](#img-srcimageslogoalluretosvg-width25-height25--altallure-a-интеграция-с-a-targetblank-hrefhttpsallureautotestscloudlaunch19106-allure-testops-a)
-- [Уведомление в Telegram о результатах прогона тестов](#img-srcimageslogotelegramsvg-width25-height25--altallure-a-уведомление-в-telegram-о-результатах-прогона-тестов)
-- [Видео пример прохождения тестов](#img-srcimageslogoselenoidsvg-width25-height25--altallure-a-пример-видео-прохождения-теста)
+- [Allure-отчет](#отчет-в-allure-report)
+- [Интеграция с Allure TestOps](#интеграция-с-allure-testops)
+- [Уведомление в Telegram о результатах прогона тестов](#уведомление-в-telegram-о-результатах-прогона-тестов)
+- [Видео пример прохождения тестов](пример-видео-прохождения-теста)
 
 ## :wrench: Технологии и инструменты
 
@@ -64,9 +64,9 @@ ui_test
 ```
 
 ###  Проект в Jenkins:
-#### 1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/C17-Slabodenyuk-SiriusTests/">проект</a>
+#### 1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/C17-Slabodenyuk_Anatoly-SiriusTests/">проект</a>
 
-![This is an image](/images/screens/Jenkins1.png)
+![This is an image](images/screens/Jenkins1.png)
 
 #### 2. Выбрать пункт **Собрать с параметрами**
 #### 3. В случае необходимости изменить параметры, выбрав значения из выпадающих списков
