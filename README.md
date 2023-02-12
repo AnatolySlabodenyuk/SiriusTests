@@ -1,21 +1,21 @@
-# Проект по автоматизации тестирования
+# :computer: Проект по автоматизации тестирования
 ### Веб сайт <a target="_blank" href="https://online.sochisirius.ru/auth">Страница регистрации Сириус Курсы</a>
 
 <p align="center">
 <img title="Allure Graphics" src="images/screens/сириус курсы.jpg">
 </p>
 
-## :maple_leaf: Содержание:
+## :open_file_folder: Содержание:
 
-- [Технологии и инструменты](#технологии-и-инструменты)
-- [Список проверок, реализованных в тестах](#Список проверок,-реализованных-в-тестах)
-- [Запуск тестов (сборка в Jenkins)](#запуск-тестов)
-- [Allure-отчет](#-отчет-в-allure-report)
-- [Интеграция с Allure TestOps](#И-нтеграция-с-Allure-TestOps)
-- [Уведомление в Telegram о результатах прогона тестов](#уведомление-в-Telegram-о-результатах-прогона-тестов)
-- [Видео пример прохождения тестов](#Видео-прохождения-тестов)
+- [Технологии и инструменты](#-mapleleaf--технологии-и-инструменты)
+- [Список проверок, реализованных в тестах](#-mapleleaf--список-проверок-реализованных-в-автотестах)
+- [Запуск тестов (сборка в Jenkins)](#-mapleleaf--запуск-тестов)
+- [Allure-отчет](#img-srcimageslogoalluresvg-width25-height25--altallure-a-отчет-в-a-targetblank-hrefhttpsjenkinsautotestscloudjobc17-slabodenyuk-siriustests7allure-allure-report-a)
+- [Интеграция с Allure TestOps](#img-srcimageslogoalluretosvg-width25-height25--altallure-a-интеграция-с-a-targetblank-hrefhttpsallureautotestscloudlaunch19106-allure-testops-a)
+- [Уведомление в Telegram о результатах прогона тестов](#img-srcimageslogotelegramsvg-width25-height25--altallure-a-уведомление-в-telegram-о-результатах-прогона-тестов)
+- [Видео пример прохождения тестов](#img-srcimageslogoselenoidsvg-width25-height25--altallure-a-видео-прохождения-тестов)
 
-## :maple_leaf:Технологии и инструменты
+## :wrench: Технологии и инструменты
 
 <p align="center">
 <a href="https://www.jetbrains.com/idea/"><img src="images/logo/Idea.svg" width="50" height="50"  alt="IDEA"/></a>
@@ -31,20 +31,20 @@
 <a href="https://www.jenkins.io/"><img src="images/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
 </p>
 
-## :maple_leaf: Список проверок, реализованных в автотестах
+## :white_check_mark: Список проверок, реализованных в автотестах
 
 - [x] Проверка названия формы регистрации
 - [x] Проверка отображения подтверждающего окна после прохождения регистрации
 - [x] Проверка совпадения введенного Email с Email, указанным во всплывающем окне
 - [x] Проверка отображения страницы восстановления пароля
 
-## :maple_leaf: Список проверок, реализованных в ручных тестах
+## :white_check_mark: Список проверок, реализованных в ручных тестах
 
 - [x] Проверка отображения кнопки для перехода на страницу регистрации
 - [x] Проверка содержания кнопки меню
 - [x] Проверка перехода на страницу регистрации после нажатия на кнопку с главной страницы
 
-## :maple_leaf: Запуск тестов
+## :electric_plug: Запуск тестов
 
 ###  Локальный запуск :
 Пример командной строки:
@@ -111,7 +111,8 @@ ui_test
 <img title="Allure Overview Dashboard" src="images/screens/telegramNotif.png" >
 </p>
 
-## <img src="images/logo/Selenoid.svg" width="25" height="25"  alt="Allure"/></a> Видео прохождения тестов
+## <img src="images/logo/Selenoid.svg" width="25" height="25"  alt="Allure"/></a> Пример видео прохождения теста
+### Тест #2 Появляется окно запроса на регистрацию после заполнения всех полей формы и подтверждения
 <p align="center">
 <img title="Selenoid Video" src="images/gifs/video.gif" width="250" height="153"  alt="videoUItests.mp4"> 
 
