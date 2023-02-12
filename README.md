@@ -7,14 +7,13 @@
 
 ## :maple_leaf: Содержание:
 
-- Технологии и инструменты
-- Список проверок, реализованных в тестах
-- Запуск тестов (сборка в Jenkins)
-- Allure-отчет
-- Интеграция с Allure TestOps
-- Интеграция с Atlassian Jira
-- Уведомление в Telegram о результатах прогона тестов
-- Видео пример прохождения тестов
+- [Технологии и инструменты](#технологии-и-инструменты)
+- [Список проверок, реализованных в тестах](#Список проверок,-реализованных-в-тестах)
+- [Запуск тестов (сборка в Jenkins)](#запуск-тестов)
+- [Allure-отчет](#-отчет-в-allure-report)
+- [Интеграция с Allure TestOps](#И-нтеграция-с-Allure-TestOps)
+- [Уведомление в Telegram о результатах прогона тестов](#уведомление-в-Telegram-о-результатах-прогона-тестов)
+- [Видео пример прохождения тестов](#Видео-прохождения-тестов)
 
 ## :maple_leaf:Технологии и инструменты
 
@@ -52,7 +51,8 @@
 ```bash
 gradle clean ui_test
 ```
-Удаленный запуск с параметрами:
+### Удаленный запуск с параметрами:
+Пример настройки параметров Jenkins
 ```bash
 clean 
 ui_test
@@ -113,6 +113,6 @@ ui_test
 
 ## <img src="images/logo/Selenoid.svg" width="25" height="25"  alt="Allure"/></a> Видео прохождения тестов
 <p align="center">
-<img title="Selenoid Video" src="https://user-images.githubusercontent.com/81707244/212382939-5543536f-eba7-485e-93ac-28f2c69c449e.mp4" width="250" height="153"  alt="videoUItests.mp4"> 
+<img title="Selenoid Video" src="images/gifs/video.gif" width="250" height="153"  alt="videoUItests.mp4"> 
 
 </p>
