@@ -1,5 +1,5 @@
 # :computer: Проект по автоматизации тестирования
-### Веб сайт <a target="_blank" href="https://online.sochisirius.ru/auth">Страница регистрации Сириус Курсы</a>
+### <a target="_blank" href="https://online.sochisirius.ru/auth">Страница регистрации Сириус Курсы</a>
 
 <p align="center">
 <img title="Allure Graphics" src="images/screens/сириус курсы.jpg">
