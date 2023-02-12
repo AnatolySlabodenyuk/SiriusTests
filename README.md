@@ -8,8 +8,8 @@
 ## :open_file_folder: Содержание:
 
 - [Технологии и инструменты](#wrench-технологии-и-инструменты)
-- [Список проверок, реализованных в тестах](#whitecheckmark-список-проверок-реализованных-в-автотестах)
-- [Запуск тестов (сборка в Jenkins)](#electricplug-запуск-тестов)
+- [Список проверок, реализованных в тестах](#white_check_mark-список-проверок,-реализованных-в-автотестах)
+- [Запуск тестов (сборка в Jenkins)](#electric_plug-запуск-тестов)
 - [Allure-отчет](#img-srcimageslogoalluresvg-width25-height25--altallure-a-отчет-в-a-targetblank-hrefhttpsjenkinsautotestscloudjobc17-slabodenyuk-siriustests7allure-allure-report-a)
 - [Интеграция с Allure TestOps](#img-srcimageslogoalluretosvg-width25-height25--altallure-a-интеграция-с-a-targetblank-hrefhttpsallureautotestscloudlaunch19106-allure-testops-a)
 - [Уведомление в Telegram о результатах прогона тестов](#img-srcimageslogotelegramsvg-width25-height25--altallure-a-уведомление-в-telegram-о-результатах-прогона-тестов)
