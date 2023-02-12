@@ -8,7 +8,7 @@
 ## :open_file_folder: Содержание:
 
 - [Технологии и инструменты](#wrench-технологии-и-инструменты)
-- [Список проверок, реализованных в тестах](#white_check_mark-список-проверок,-реализованных-в-автотестах)
+- [Список проверок](#white_check_mark-список-проверок)
 - [Запуск тестов (сборка в Jenkins)](#electric_plug-запуск-тестов)
 - [Allure-отчет](#img-srcimageslogoalluresvg-width25-height25--altallure-a-отчет-в-a-targetblank-hrefhttpsjenkinsautotestscloudjobc17-slabodenyuk-siriustests7allure-allure-report-a)
 - [Интеграция с Allure TestOps](#img-srcimageslogoalluretosvg-width25-height25--altallure-a-интеграция-с-a-targetblank-hrefhttpsallureautotestscloudlaunch19106-allure-testops-a)
@@ -31,14 +31,15 @@
 <a href="https://www.jenkins.io/"><img src="images/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
 </p>
 
-## :white_check_mark: Список проверок, реализованных в автотестах
+## :white_check_mark: Список проверок
+### Автотесты
 
 - [x] Проверка названия формы регистрации
 - [x] Проверка отображения подтверждающего окна после прохождения регистрации
 - [x] Проверка совпадения введенного Email с Email, указанным во всплывающем окне
 - [x] Проверка отображения страницы восстановления пароля
 
-## :white_check_mark: Список проверок, реализованных в ручных тестах
+### Ручные тесты
 
 - [x] Проверка отображения кнопки для перехода на страницу регистрации
 - [x] Проверка содержания кнопки меню
