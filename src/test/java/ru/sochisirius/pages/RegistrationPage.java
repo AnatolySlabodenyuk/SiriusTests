@@ -2,6 +2,8 @@ package ru.sochisirius.pages;
 
 import com.codeborne.selenide.SelenideElement;
 
+import java.util.Date;
+
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
@@ -51,8 +53,8 @@ public class RegistrationPage {
         return this;
     }
 
-    public RegistrationPage setBirthDate() {
-        dateOfBirthInput.setValue("16.07.1997");
+    public RegistrationPage setBirthDate(String value) {
+        dateOfBirthInput.setValue(value);
         return this;
     }
 

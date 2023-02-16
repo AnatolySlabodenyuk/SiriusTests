@@ -1,8 +1,11 @@
 package ru.sochisirius.tests;
 
 import com.codeborne.selenide.Configuration;
+import com.github.javafaker.Faker;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+
+import java.text.SimpleDateFormat;
 
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
@@ -10,7 +13,10 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class Sirius_test {
+public class WithoutPO {
+    SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+    Faker faker = new Faker();
+
     @BeforeAll
     static void beforeAll() {
         Configuration.baseUrl = "https://online.sochisirius.ru";
@@ -23,6 +29,7 @@ public class Sirius_test {
         String lastName = "Slabodenyuk";
         String eMail = "example2@example.com";
         String userNumber = "1234567890";
+        String dob = sdf.format(faker.date().birthday());
 
         open("/auth");
         $(".modal-inline__title").shouldHave(text("Войдите, чтобы продолжить"));
@@ -34,7 +41,7 @@ public class Sirius_test {
         $("#f_1001410012").setValue("userName");
         $("#f_1001410014").setValue("fatherName");
 
-        $("[name=f_1001510000]").setValue("16.07.1997");
+        $("[name=f_1001510000]").setValue(dob);
 
        // $(".input-group-btn").click();
         //$(".react-datepicker__month-select").selectOption("июль");

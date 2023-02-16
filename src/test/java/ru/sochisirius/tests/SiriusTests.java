@@ -5,12 +5,14 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+import java.text.SimpleDateFormat;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 
-public class RegistrationPageTests extends TestBase {
+public class SiriusTests extends TestBase {
+    SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
     Faker faker = new Faker();
     @Test
     @Tag("Sirius_tests")
@@ -29,6 +31,7 @@ public class RegistrationPageTests extends TestBase {
         String lastName = faker.name().lastName();
         String userName = faker.name().firstName();
         String fatherName = faker.name().firstName();
+        String dateOfBirth = sdf.format(faker.date().birthday());
         String password = faker.internet().password();
         String repeatPassword = password;
 
@@ -41,7 +44,7 @@ public class RegistrationPageTests extends TestBase {
                     .setLastName(lastName)
                     .setFirstName(userName)
                     .setFatherName(fatherName)
-                    .setBirthDate()
+                    .setBirthDate(dateOfBirth)
                     .setPassword(password)
                     .setRepeatPassword(repeatPassword)
                     .clickCheckBox()
@@ -61,6 +64,7 @@ public class RegistrationPageTests extends TestBase {
         String lastName = faker.name().lastName();
         String userName = faker.name().firstName();
         String fatherName = faker.name().firstName();
+        String dateOfBirth = sdf.format(faker.date().birthday());
         String password = faker.internet().password();
         String repeatPassword = password;
 
@@ -73,7 +77,7 @@ public class RegistrationPageTests extends TestBase {
                     .setLastName(lastName)
                     .setFirstName(userName)
                     .setFatherName(fatherName)
-                    .setBirthDate()
+                    .setBirthDate(dateOfBirth)
                     .setPassword(password)
                     .setRepeatPassword(repeatPassword)
                     .clickCheckBox()
