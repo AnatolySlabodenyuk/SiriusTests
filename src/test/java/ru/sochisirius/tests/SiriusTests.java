@@ -99,11 +99,35 @@ public class SiriusTests extends TestBase {
         });
 
         step("Нажать на ссылку \"получить пароль\"", () -> {
-            $(byText("получить пароль")).click();
+            registrationPage.getPassword();
         });
 
         step("Проверить, что открывшаяся страница имеет заголовок \"Сброс пароля\"", () -> {
-            $(".modal-inline__title").shouldHave(text("Сброс пароля"));
+            registrationPage.getPasswordPageName();
         });
+    }
+
+    @Test
+    @Tag("Sirius_tests")
+    @DisplayName("Появляется предупреждающее окно, если введен несуществующий Email")
+    void nonexistentEmailPageTest() {
+
+        String eMail = faker.internet().emailAddress();
+        String password = faker.internet().password();
+
+        step("Открыть страницу авторизации", () -> {
+            authPage.openAuthPage();
+        });
+
+        step("Ввести незарегистрированный Email и пароль и попробовать зарегистрироваться", () -> {
+            authPage.setEmail(eMail);
+            authPage.setPassword(password);
+            authPage.submit();
+        });
+
+        step("Проверить, что появилось предупреждающее окно", () -> {
+            authPage.dangerModalAppear();
+        });
+
     }
 }

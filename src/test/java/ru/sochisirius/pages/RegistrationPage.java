@@ -15,6 +15,9 @@ public class RegistrationPage {
     private final String TITLE_TEXT = "Зарегистрируйтесь, чтобы продолжить";
 
     private SelenideElement
+            registrationLink = $(byText("Зарегистрируйтесь")),
+            registrationModal = $(".modal-inline__title"),
+            passwordLink = $(byText("получить пароль")),
             userEmailInput = $("#f_1001410010"),
             lastNameInput = $("#f_1001410013"),
             firstNameInput = $("#f_1001410012"),
@@ -28,10 +31,21 @@ public class RegistrationPage {
 
     public RegistrationPage openRegistrationPage() {
         open("/auth");
-        $(byText("Зарегистрируйтесь")).click();
-        $(".modal-inline__title").shouldHave(text(TITLE_TEXT));
+        registrationLink.click();
+        registrationModal.shouldHave(text(TITLE_TEXT));
         return this;
     }
+
+    public RegistrationPage getPassword() {
+        passwordLink.click();
+        return this;
+    }
+
+    public RegistrationPage getPasswordPageName() {
+        registrationModal.shouldHave(text("Сброс пароля"));
+        return this;
+    }
+
 
     public RegistrationPage setEmail(String value) {
         userEmailInput.setValue(value);
