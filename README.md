@@ -73,7 +73,7 @@ ui_test
 #### 5. Результат запуска сборки можно посмотреть в отчёте Allure
 
 
-## <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/C17-Slabodenyuk_Anatoly-SiriusTests/9/allure/">Allure report</a>
+## <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/C17-Slabodenyuk_Anatoly-SiriusTests/12/allure/">Allure report</a>
 
 ###  Главное окно
 
@@ -94,7 +94,7 @@ ui_test
 </p>
 
 
-## <img src="images/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Интеграция с <a target="_blank" href="https://allure.autotests.cloud/launch/19106">Allure TestOps</a>
+## <img src="images/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/1887/dashboards">Allure TestOps</a>
 ### Общий список всех кейсов: ручных и авто
 <p align="center">
 <img title="Allure Graphics" src="images/screens/allureTO-report.png">
