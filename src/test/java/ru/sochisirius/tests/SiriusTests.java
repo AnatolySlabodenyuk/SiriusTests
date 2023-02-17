@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 
 import java.text.SimpleDateFormat;
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 
@@ -86,6 +85,19 @@ public class SiriusTests extends TestBase {
 
         step("Проверить, что Email совпадает", () -> {
             $(".modal-inline__body").shouldHave(text(eMail));
+        });
+    }
+
+    @Test
+    @Tag("Sirius_tests")
+    @DisplayName("Кнопка регистрации неактивна, если поля формы не заполнены")
+    void enabledButton() {
+        step("Открыть форму регистрации", () -> {
+            registrationPage.openRegistrationPage();
+        });
+
+        step("Убедиться, что кнопка регистрации некликабельна", () -> {
+            registrationPage.submitEnabled();
         });
     }
 

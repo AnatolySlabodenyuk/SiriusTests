@@ -2,8 +2,6 @@ package ru.sochisirius.pages;
 
 import com.codeborne.selenide.SelenideElement;
 
-import java.util.Date;
-
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
@@ -94,6 +92,11 @@ public class RegistrationPage {
 
     public RegistrationPage resultsModalAppear() {
         registrationResultsModal.should(appear);
+        return this;
+    }
+
+    public RegistrationPage submitEnabled() {
+        submitButton.isEnabled();
         return this;
     }
 
